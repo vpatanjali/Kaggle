@@ -1,0 +1,2 @@
+grep "Epochs seen" $1.out | tail -1
+grep "max_epoch" $1.yaml

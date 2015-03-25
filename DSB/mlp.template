@@ -1,0 +1,48 @@
+!obj:pylearn2.train.Train {
+    dataset: &train !pkl: "data/%(dim)sp_train.pkl",
+    model: !obj:pylearn2.models.mlp.MLP {
+        layers: [ !obj:pylearn2.models.mlp.RectifiedLinear {
+                     layer_name: 'h0',
+                     dim: %(dim1)s,
+                     sparse_init: 5
+                 },  !obj:pylearn2.models.mlp.RectifiedLinear {
+                     layer_name: 'h1',
+                     dim: %(dim2)s,
+                     sparse_init: 5
+                 }, !obj:pylearn2.models.mlp.Softmax {
+                     layer_name: 'y',
+                     n_classes: 121,
+                     irange: 0.
+                 }
+                ],
+        nvis: %(dim_sq)s,
+    },
+    algorithm: !obj:pylearn2.training_algorithms.sgd.SGD {
+        batch_size: %(batch_size)s,
+        learning_rate: %(learning_rate)s,
+        monitoring_dataset:
+            {
+                'train' : *train,
+                'valid' : !pkl: "data/%(dim)sp_val.pkl",
+                'test'  : !pkl: "data/%(dim)sp_test.pkl"
+            },
+        cost: !obj:pylearn2.costs.cost.SumOfCosts { costs: [
+            !obj:pylearn2.costs.mlp.Default {
+            }, !obj:pylearn2.costs.mlp.WeightDecay {
+                coeffs: [ .00005, .00005, .00005 ]
+            }
+            ]
+        },
+        learning_rule: !obj:pylearn2.training_algorithms.learning_rule.Momentum {
+            init_momentum: .5
+        },
+        termination_criterion: !obj:pylearn2.termination_criteria.And {
+            criteria: [
+                !obj:pylearn2.termination_criteria.EpochCounter {
+                    max_epochs: %(epochs)s
+                }
+            ]
+        }
+    },
+    save_freq : 1
+}
