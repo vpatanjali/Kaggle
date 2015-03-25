@@ -1,0 +1,1869 @@
+Parameter and initial learning rate summary:
+	h0_W: 0.1
+	h0_b: 0.1
+	h1_W: 0.1
+	h1_b: 0.1
+	softmax_b: 0.1
+	softmax_W: 0.1
+Compiling sgd_update...
+Compiling sgd_update done. Time elapsed: 7.063770 seconds
+compiling begin_record_entry...
+compiling begin_record_entry done. Time elapsed: 0.392990 seconds
+Monitored channels: 
+	learning_rate
+	momentum
+	test_h0_col_norms_max
+	test_h0_col_norms_mean
+	test_h0_col_norms_min
+	test_h0_max_x_max_u
+	test_h0_max_x_mean_u
+	test_h0_max_x_min_u
+	test_h0_mean_x_max_u
+	test_h0_mean_x_mean_u
+	test_h0_mean_x_min_u
+	test_h0_min_x_max_u
+	test_h0_min_x_mean_u
+	test_h0_min_x_min_u
+	test_h0_range_x_max_u
+	test_h0_range_x_mean_u
+	test_h0_range_x_min_u
+	test_h0_row_norms_max
+	test_h0_row_norms_mean
+	test_h0_row_norms_min
+	test_h1_col_norms_max
+	test_h1_col_norms_mean
+	test_h1_col_norms_min
+	test_h1_max_x_max_u
+	test_h1_max_x_mean_u
+	test_h1_max_x_min_u
+	test_h1_mean_x_max_u
+	test_h1_mean_x_mean_u
+	test_h1_mean_x_min_u
+	test_h1_min_x_max_u
+	test_h1_min_x_mean_u
+	test_h1_min_x_min_u
+	test_h1_range_x_max_u
+	test_h1_range_x_mean_u
+	test_h1_range_x_min_u
+	test_h1_row_norms_max
+	test_h1_row_norms_mean
+	test_h1_row_norms_min
+	test_objective
+	test_y_col_norms_max
+	test_y_col_norms_mean
+	test_y_col_norms_min
+	test_y_max_max_class
+	test_y_mean_max_class
+	test_y_min_max_class
+	test_y_misclass
+	test_y_nll
+	test_y_row_norms_max
+	test_y_row_norms_mean
+	test_y_row_norms_min
+	total_seconds_last_epoch
+	train_h0_col_norms_max
+	train_h0_col_norms_mean
+	train_h0_col_norms_min
+	train_h0_max_x_max_u
+	train_h0_max_x_mean_u
+	train_h0_max_x_min_u
+	train_h0_mean_x_max_u
+	train_h0_mean_x_mean_u
+	train_h0_mean_x_min_u
+	train_h0_min_x_max_u
+	train_h0_min_x_mean_u
+	train_h0_min_x_min_u
+	train_h0_range_x_max_u
+	train_h0_range_x_mean_u
+	train_h0_range_x_min_u
+	train_h0_row_norms_max
+	train_h0_row_norms_mean
+	train_h0_row_norms_min
+	train_h1_col_norms_max
+	train_h1_col_norms_mean
+	train_h1_col_norms_min
+	train_h1_max_x_max_u
+	train_h1_max_x_mean_u
+	train_h1_max_x_min_u
+	train_h1_mean_x_max_u
+	train_h1_mean_x_mean_u
+	train_h1_mean_x_min_u
+	train_h1_min_x_max_u
+	train_h1_min_x_mean_u
+	train_h1_min_x_min_u
+	train_h1_range_x_max_u
+	train_h1_range_x_mean_u
+	train_h1_range_x_min_u
+	train_h1_row_norms_max
+	train_h1_row_norms_mean
+	train_h1_row_norms_min
+	train_objective
+	train_y_col_norms_max
+	train_y_col_norms_mean
+	train_y_col_norms_min
+	train_y_max_max_class
+	train_y_mean_max_class
+	train_y_min_max_class
+	train_y_misclass
+	train_y_nll
+	train_y_row_norms_max
+	train_y_row_norms_mean
+	train_y_row_norms_min
+	training_seconds_this_epoch
+	valid_h0_col_norms_max
+	valid_h0_col_norms_mean
+	valid_h0_col_norms_min
+	valid_h0_max_x_max_u
+	valid_h0_max_x_mean_u
+	valid_h0_max_x_min_u
+	valid_h0_mean_x_max_u
+	valid_h0_mean_x_mean_u
+	valid_h0_mean_x_min_u
+	valid_h0_min_x_max_u
+	valid_h0_min_x_mean_u
+	valid_h0_min_x_min_u
+	valid_h0_range_x_max_u
+	valid_h0_range_x_mean_u
+	valid_h0_range_x_min_u
+	valid_h0_row_norms_max
+	valid_h0_row_norms_mean
+	valid_h0_row_norms_min
+	valid_h1_col_norms_max
+	valid_h1_col_norms_mean
+	valid_h1_col_norms_min
+	valid_h1_max_x_max_u
+	valid_h1_max_x_mean_u
+	valid_h1_max_x_min_u
+	valid_h1_mean_x_max_u
+	valid_h1_mean_x_mean_u
+	valid_h1_mean_x_min_u
+	valid_h1_min_x_max_u
+	valid_h1_min_x_mean_u
+	valid_h1_min_x_min_u
+	valid_h1_range_x_max_u
+	valid_h1_range_x_mean_u
+	valid_h1_range_x_min_u
+	valid_h1_row_norms_max
+	valid_h1_row_norms_mean
+	valid_h1_row_norms_min
+	valid_objective
+	valid_y_col_norms_max
+	valid_y_col_norms_mean
+	valid_y_col_norms_min
+	valid_y_max_max_class
+	valid_y_mean_max_class
+	valid_y_min_max_class
+	valid_y_misclass
+	valid_y_nll
+	valid_y_row_norms_max
+	valid_y_row_norms_mean
+	valid_y_row_norms_min
+Compiling accum...
+graph size: 203
+graph size: 199
+graph size: 199
+Compiling accum done. Time elapsed: 7.669866 seconds
+Monitoring step:
+	Epochs seen: 0
+	Batches seen: 0
+	Examples seen: 0
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 4.04358748363
+	test_h0_col_norms_mean: 2.15271587836
+	test_h0_col_norms_min: 0.739964567379
+	test_h0_max_x_max_u: 43.1460382757
+	test_h0_max_x_mean_u: 6.16609519426
+	test_h0_max_x_min_u: 0.327433322779
+	test_h0_mean_x_max_u: 3.05303181286
+	test_h0_mean_x_mean_u: 0.532198816214
+	test_h0_mean_x_min_u: 0.0196088606486
+	test_h0_min_x_max_u: 0.0139292134425
+	test_h0_min_x_mean_u: 0.000208566415997
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 43.1460382757
+	test_h0_range_x_mean_u: 6.16588662784
+	test_h0_range_x_min_u: 0.327433322779
+	test_h0_row_norms_max: 4.77629885436
+	test_h0_row_norms_mean: 3.22042209852
+	test_h0_row_norms_min: 1.43722910513
+	test_h1_col_norms_max: 5.27955124911
+	test_h1_col_norms_mean: 2.14486013311
+	test_h1_col_norms_min: 0.772586955821
+	test_h1_max_x_max_u: 65.7560077258
+	test_h1_max_x_mean_u: 9.11334764116
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 5.84780094167
+	test_h1_mean_x_mean_u: 0.851023076376
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.144438615009
+	test_h1_min_x_mean_u: 0.00163964985971
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 65.742948911
+	test_h1_range_x_mean_u: 9.1117079913
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.94888840357
+	test_h1_row_norms_mean: 2.07579403785
+	test_h1_row_norms_min: 0.169889291095
+	test_objective: 2.19722457734
+	test_y_col_norms_max: 0.0
+	test_y_col_norms_mean: 0.0
+	test_y_col_norms_min: 0.0
+	test_y_max_max_class: 0.111111111111
+	test_y_mean_max_class: 0.111111111111
+	test_y_min_max_class: 0.111111111111
+	test_y_misclass: 0.968551409483
+	test_y_nll: 2.19722457734
+	test_y_row_norms_max: 0.0
+	test_y_row_norms_mean: 0.0
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 0.0
+	train_h0_col_norms_max: 4.04358748363
+	train_h0_col_norms_mean: 2.15271587836
+	train_h0_col_norms_min: 0.739964567379
+	train_h0_max_x_max_u: 42.2113178345
+	train_h0_max_x_mean_u: 5.90356947128
+	train_h0_max_x_min_u: 0.300292397605
+	train_h0_mean_x_max_u: 3.07232245823
+	train_h0_mean_x_mean_u: 0.523729262315
+	train_h0_mean_x_min_u: 0.0175620594283
+	train_h0_min_x_max_u: 0.0236498672998
+	train_h0_min_x_mean_u: 0.000273254184426
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 42.2058657128
+	train_h0_range_x_mean_u: 5.9032962171
+	train_h0_range_x_min_u: 0.300292397605
+	train_h0_row_norms_max: 4.77629885436
+	train_h0_row_norms_mean: 3.22042209852
+	train_h0_row_norms_min: 1.43722910513
+	train_h1_col_norms_max: 5.27955124911
+	train_h1_col_norms_mean: 2.14486013311
+	train_h1_col_norms_min: 0.772586955821
+	train_h1_max_x_max_u: 63.6147584692
+	train_h1_max_x_mean_u: 8.70868888917
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 5.78792438161
+	train_h1_mean_x_mean_u: 0.834556874168
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.128587049881
+	train_h1_min_x_mean_u: 0.00152036411667
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 63.5981823015
+	train_h1_range_x_mean_u: 8.70716852505
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.94888840357
+	train_h1_row_norms_mean: 2.07579403785
+	train_h1_row_norms_min: 0.169889291095
+	train_objective: 2.19722457734
+	train_y_col_norms_max: 0.0
+	train_y_col_norms_mean: 0.0
+	train_y_col_norms_min: 0.0
+	train_y_max_max_class: 0.111111111111
+	train_y_mean_max_class: 0.111111111111
+	train_y_min_max_class: 0.111111111111
+	train_y_misclass: 0.969588230017
+	train_y_nll: 2.19722457734
+	train_y_row_norms_max: 0.0
+	train_y_row_norms_mean: 0.0
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 0.0
+	valid_h0_col_norms_max: 4.04358748363
+	valid_h0_col_norms_mean: 2.15271587836
+	valid_h0_col_norms_min: 0.739964567379
+	valid_h0_max_x_max_u: 41.3232316989
+	valid_h0_max_x_mean_u: 5.82589524433
+	valid_h0_max_x_min_u: 0.312386119073
+	valid_h0_mean_x_max_u: 2.96511668652
+	valid_h0_mean_x_mean_u: 0.518173589502
+	valid_h0_mean_x_min_u: 0.0177502607297
+	valid_h0_min_x_max_u: 0.0255297100509
+	valid_h0_min_x_mean_u: 0.000240340440634
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 41.3207206298
+	valid_h0_range_x_mean_u: 5.82565490389
+	valid_h0_range_x_min_u: 0.312386119073
+	valid_h0_row_norms_max: 4.77629885436
+	valid_h0_row_norms_mean: 3.22042209852
+	valid_h0_row_norms_min: 1.43722910513
+	valid_h1_col_norms_max: 5.27955124911
+	valid_h1_col_norms_mean: 2.14486013311
+	valid_h1_col_norms_min: 0.772586955821
+	valid_h1_max_x_max_u: 61.6578669602
+	valid_h1_max_x_mean_u: 8.54661824809
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 5.7518371136
+	valid_h1_mean_x_mean_u: 0.824984386145
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.12371106205
+	valid_h1_min_x_mean_u: 0.00153266357627
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 61.6436743402
+	valid_h1_range_x_mean_u: 8.54508558452
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.94888840357
+	valid_h1_row_norms_mean: 2.07579403785
+	valid_h1_row_norms_min: 0.169889291095
+	valid_objective: 2.19722457734
+	valid_y_col_norms_max: 0.0
+	valid_y_col_norms_mean: 0.0
+	valid_y_col_norms_min: 0.0
+	valid_y_max_max_class: 0.111111111111
+	valid_y_mean_max_class: 0.111111111111
+	valid_y_min_max_class: 0.111111111111
+	valid_y_misclass: 0.965928449744
+	valid_y_nll: 2.19722457734
+	valid_y_row_norms_max: 0.0
+	valid_y_row_norms_mean: 0.0
+	valid_y_row_norms_min: 0.0
+Time this epoch: 2.621855 seconds
+Monitoring step:
+	Epochs seen: 1
+	Batches seen: 446
+	Examples seen: 44588
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 4.15014620251
+	test_h0_col_norms_mean: 2.09925243261
+	test_h0_col_norms_min: 0.932664066318
+	test_h0_max_x_max_u: 35.8120717114
+	test_h0_max_x_mean_u: 5.90305831577
+	test_h0_max_x_min_u: 0.319773168521
+	test_h0_mean_x_max_u: 3.59471911806
+	test_h0_mean_x_mean_u: 0.610213167569
+	test_h0_mean_x_min_u: 0.0108190772331
+	test_h0_min_x_max_u: 0.0814958081117
+	test_h0_min_x_mean_u: 0.000580276227343
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 35.8120717114
+	test_h0_range_x_mean_u: 5.90247803954
+	test_h0_range_x_min_u: 0.319773168521
+	test_h0_row_norms_max: 4.6454773545
+	test_h0_row_norms_mean: 3.1404231815
+	test_h0_row_norms_min: 1.7380195663
+	test_h1_col_norms_max: 4.93154075846
+	test_h1_col_norms_mean: 2.11727571579
+	test_h1_col_norms_min: 0.808836100151
+	test_h1_max_x_max_u: 22.6171151279
+	test_h1_max_x_mean_u: 1.31124368307
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 3.72582117255
+	test_h1_mean_x_mean_u: 0.139076661149
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.0131380705489
+	test_h1_min_x_mean_u: 7.26870112933e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 22.6157157962
+	test_h1_range_x_mean_u: 1.31117099606
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.48149165729
+	test_h1_row_norms_mean: 2.09309194836
+	test_h1_row_norms_min: 0.751573291215
+	test_objective: 1.32712697203
+	test_y_col_norms_max: 2.1954768472
+	test_y_col_norms_mean: 1.69207101933
+	test_y_col_norms_min: 1.13680135062
+	test_y_max_max_class: 0.843946827163
+	test_y_mean_max_class: 0.569682354205
+	test_y_min_max_class: 0.202368525521
+	test_y_misclass: 0.328499266743
+	test_y_nll: 0.968412582803
+	test_y_row_norms_max: 1.28439377116
+	test_y_row_norms_mean: 0.322003185089
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 0.0
+	train_h0_col_norms_max: 4.15014620251
+	train_h0_col_norms_mean: 2.09925243261
+	train_h0_col_norms_min: 0.932664066318
+	train_h0_max_x_max_u: 36.1807210136
+	train_h0_max_x_mean_u: 5.64605175804
+	train_h0_max_x_min_u: 0.300629760281
+	train_h0_mean_x_max_u: 3.63329450784
+	train_h0_mean_x_mean_u: 0.597727321741
+	train_h0_mean_x_min_u: 0.0101194046427
+	train_h0_min_x_max_u: 0.0784843446328
+	train_h0_min_x_mean_u: 0.000587980494494
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 36.1780961256
+	train_h0_range_x_mean_u: 5.64546377754
+	train_h0_range_x_min_u: 0.300629760281
+	train_h0_row_norms_max: 4.6454773545
+	train_h0_row_norms_mean: 3.1404231815
+	train_h0_row_norms_min: 1.7380195663
+	train_h1_col_norms_max: 4.93154075846
+	train_h1_col_norms_mean: 2.11727571579
+	train_h1_col_norms_min: 0.808836100151
+	train_h1_max_x_max_u: 23.0623509295
+	train_h1_max_x_mean_u: 1.25111871134
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 3.88811271836
+	train_h1_mean_x_mean_u: 0.140727811228
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00328503710322
+	train_h1_min_x_mean_u: 2.04105866215e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 23.0620336341
+	train_h1_range_x_mean_u: 1.25109830076
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.48149165729
+	train_h1_row_norms_mean: 2.09309194836
+	train_h1_row_norms_min: 0.751573291215
+	train_objective: 1.32655452916
+	train_y_col_norms_max: 2.1954768472
+	train_y_col_norms_mean: 1.69207101933
+	train_y_col_norms_min: 1.13680135062
+	train_y_max_max_class: 0.838974775148
+	train_y_mean_max_class: 0.570082389018
+	train_y_min_max_class: 0.202938543438
+	train_y_misclass: 0.322127029694
+	train_y_nll: 0.963029076429
+	train_y_row_norms_max: 1.28439377116
+	train_y_row_norms_mean: 0.322003185089
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 2.621855
+	valid_h0_col_norms_max: 4.15014620251
+	valid_h0_col_norms_mean: 2.09925243261
+	valid_h0_col_norms_min: 0.932664066318
+	valid_h0_max_x_max_u: 36.2294789826
+	valid_h0_max_x_mean_u: 5.56564463787
+	valid_h0_max_x_min_u: 0.29302200649
+	valid_h0_mean_x_max_u: 3.51419510392
+	valid_h0_mean_x_mean_u: 0.590167562253
+	valid_h0_mean_x_min_u: 0.0106046041814
+	valid_h0_min_x_max_u: 0.0938291369322
+	valid_h0_min_x_mean_u: 0.000676097718914
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 36.228801772
+	valid_h0_range_x_mean_u: 5.56496854015
+	valid_h0_range_x_min_u: 0.29302200649
+	valid_h0_row_norms_max: 4.6454773545
+	valid_h0_row_norms_mean: 3.1404231815
+	valid_h0_row_norms_min: 1.7380195663
+	valid_h1_col_norms_max: 4.93154075846
+	valid_h1_col_norms_mean: 2.11727571579
+	valid_h1_col_norms_min: 0.808836100151
+	valid_h1_max_x_max_u: 22.0166511034
+	valid_h1_max_x_mean_u: 1.24577597702
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 3.6625052979
+	valid_h1_mean_x_mean_u: 0.135496435164
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.00866675814213
+	valid_h1_min_x_mean_u: 4.82319140361e-05
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 22.0159685692
+	valid_h1_range_x_mean_u: 1.2457277451
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.48149165729
+	valid_h1_row_norms_mean: 2.09309194836
+	valid_h1_row_norms_min: 0.751573291215
+	valid_objective: 1.34759933476
+	valid_y_col_norms_max: 2.1954768472
+	valid_y_col_norms_mean: 1.69207101933
+	valid_y_col_norms_min: 1.13680135062
+	valid_y_max_max_class: 0.827157517533
+	valid_y_mean_max_class: 0.564430076762
+	valid_y_min_max_class: 0.2058950986
+	valid_y_misclass: 0.328073164171
+	valid_y_nll: 0.98310573635
+	valid_y_row_norms_max: 1.28439377116
+	valid_y_row_norms_mean: 0.322003185089
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.100426 seconds
+Time this epoch: 2.583630 seconds
+Monitoring step:
+	Epochs seen: 2
+	Batches seen: 892
+	Examples seen: 89176
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 4.08452150883
+	test_h0_col_norms_mean: 2.08438436218
+	test_h0_col_norms_min: 0.947310403822
+	test_h0_max_x_max_u: 35.1201290029
+	test_h0_max_x_mean_u: 5.95558473633
+	test_h0_max_x_min_u: 0.256757993909
+	test_h0_mean_x_max_u: 3.5816736795
+	test_h0_mean_x_mean_u: 0.630141755209
+	test_h0_mean_x_min_u: 0.009905802913
+	test_h0_min_x_max_u: 0.0972310065351
+	test_h0_min_x_mean_u: 0.000729126363595
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 35.1201290029
+	test_h0_range_x_mean_u: 5.95485560997
+	test_h0_range_x_min_u: 0.256757993909
+	test_h0_row_norms_max: 4.60117061145
+	test_h0_row_norms_mean: 3.11850253066
+	test_h0_row_norms_min: 1.71488924749
+	test_h1_col_norms_max: 4.92592996325
+	test_h1_col_norms_mean: 2.11491837708
+	test_h1_col_norms_min: 0.814300865169
+	test_h1_max_x_max_u: 18.8832355483
+	test_h1_max_x_mean_u: 1.2258997996
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.96989813083
+	test_h1_mean_x_mean_u: 0.141014301799
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.0028859221243
+	test_h1_min_x_mean_u: 2.39690366679e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 18.8832355483
+	test_h1_range_x_mean_u: 1.22587583056
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.46383912626
+	test_h1_row_norms_mean: 2.09362628347
+	test_h1_row_norms_min: 0.758600341745
+	test_objective: 1.24221094383
+	test_y_col_norms_max: 2.09169772226
+	test_y_col_norms_mean: 1.70985674535
+	test_y_col_norms_min: 1.25953747138
+	test_y_max_max_class: 0.906111241933
+	test_y_mean_max_class: 0.582464065449
+	test_y_min_max_class: 0.204781768991
+	test_y_misclass: 0.324099722992
+	test_y_nll: 0.935424122748
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.324451601078
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 6.71169
+	train_h0_col_norms_max: 4.08452150883
+	train_h0_col_norms_mean: 2.08438436218
+	train_h0_col_norms_min: 0.947310403822
+	train_h0_max_x_max_u: 35.4633813237
+	train_h0_max_x_mean_u: 5.6884039707
+	train_h0_max_x_min_u: 0.250709531855
+	train_h0_mean_x_max_u: 3.62097394548
+	train_h0_mean_x_mean_u: 0.616090523516
+	train_h0_mean_x_min_u: 0.00855354075537
+	train_h0_min_x_max_u: 0.0879042855841
+	train_h0_min_x_mean_u: 0.000678739592061
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 35.4608462483
+	train_h0_range_x_mean_u: 5.68772523111
+	train_h0_range_x_min_u: 0.250709531855
+	train_h0_row_norms_max: 4.60117061145
+	train_h0_row_norms_mean: 3.11850253066
+	train_h0_row_norms_min: 1.71488924749
+	train_h1_col_norms_max: 4.92592996325
+	train_h1_col_norms_mean: 2.11491837708
+	train_h1_col_norms_min: 0.814300865169
+	train_h1_max_x_max_u: 18.5773219449
+	train_h1_max_x_mean_u: 1.15714709453
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 3.01024758306
+	train_h1_mean_x_mean_u: 0.141694494921
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00574029714689
+	train_h1_min_x_mean_u: 4.27433041465e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 18.5768175269
+	train_h1_range_x_mean_u: 1.15710435122
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.46383912626
+	train_h1_row_norms_mean: 2.09362628347
+	train_h1_row_norms_min: 0.758600341745
+	train_objective: 1.22414206207
+	train_y_col_norms_max: 2.09169772226
+	train_y_col_norms_mean: 1.70985674535
+	train_y_col_norms_min: 1.25953747138
+	train_y_max_max_class: 0.899982752901
+	train_y_mean_max_class: 0.583645246861
+	train_y_min_max_class: 0.20640454865
+	train_y_misclass: 0.313469991926
+	train_y_nll: 0.921853993861
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.324451601078
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 2.58363
+	valid_h0_col_norms_max: 4.08452150883
+	valid_h0_col_norms_mean: 2.08438436218
+	valid_h0_col_norms_min: 0.947310403822
+	valid_h0_max_x_max_u: 35.5100079156
+	valid_h0_max_x_mean_u: 5.60826777912
+	valid_h0_max_x_min_u: 0.266362122495
+	valid_h0_mean_x_max_u: 3.49869711732
+	valid_h0_mean_x_mean_u: 0.608092186053
+	valid_h0_mean_x_min_u: 0.00869324954789
+	valid_h0_min_x_max_u: 0.10027168581
+	valid_h0_min_x_mean_u: 0.000800632503993
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 35.5100079156
+	valid_h0_range_x_mean_u: 5.60746714662
+	valid_h0_range_x_min_u: 0.266362122495
+	valid_h0_row_norms_max: 4.60117061145
+	valid_h0_row_norms_mean: 3.11850253066
+	valid_h0_row_norms_min: 1.71488924749
+	valid_h1_col_norms_max: 4.92592996325
+	valid_h1_col_norms_mean: 2.11491837708
+	valid_h1_col_norms_min: 0.814300865169
+	valid_h1_max_x_max_u: 17.8541495229
+	valid_h1_max_x_mean_u: 1.14616013793
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.87447670538
+	valid_h1_mean_x_mean_u: 0.136244005167
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0117726972221
+	valid_h1_min_x_mean_u: 0.000109499127787
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 17.8541495229
+	valid_h1_range_x_mean_u: 1.1460506388
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.46383912626
+	valid_h1_row_norms_mean: 2.09362628347
+	valid_h1_row_norms_min: 0.758600341745
+	valid_objective: 1.24393736401
+	valid_y_col_norms_max: 2.09169772226
+	valid_y_col_norms_mean: 1.70985674535
+	valid_y_col_norms_min: 1.25953747138
+	valid_y_max_max_class: 0.897630197776
+	valid_y_mean_max_class: 0.5789468688
+	valid_y_min_max_class: 0.206804731193
+	valid_y_misclass: 0.324486685197
+	valid_y_nll: 0.941380036115
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.324451601078
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.104557 seconds
+Time this epoch: 2.918729 seconds
+Monitoring step:
+	Epochs seen: 3
+	Batches seen: 1338
+	Examples seen: 133764
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 4.00474108048
+	test_h0_col_norms_mean: 2.07109216224
+	test_h0_col_norms_min: 0.935929227495
+	test_h0_max_x_max_u: 34.1071712099
+	test_h0_max_x_mean_u: 5.97108863619
+	test_h0_max_x_min_u: 0.261301361015
+	test_h0_mean_x_max_u: 3.50950807834
+	test_h0_mean_x_mean_u: 0.638468821283
+	test_h0_mean_x_min_u: 0.00887818897383
+	test_h0_min_x_max_u: 0.0962886065178
+	test_h0_min_x_mean_u: 0.000744222048888
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 34.1071712099
+	test_h0_range_x_mean_u: 5.97034441414
+	test_h0_range_x_min_u: 0.261301361015
+	test_h0_row_norms_max: 4.57728507363
+	test_h0_row_norms_mean: 3.09832222236
+	test_h0_row_norms_min: 1.68476325157
+	test_h1_col_norms_max: 4.92279134087
+	test_h1_col_norms_mean: 2.11418760535
+	test_h1_col_norms_min: 0.811912183279
+	test_h1_max_x_max_u: 18.0725910357
+	test_h1_max_x_mean_u: 1.13091295955
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 3.14034079803
+	test_h1_mean_x_mean_u: 0.131694777672
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.0157169745052
+	test_h1_min_x_mean_u: 7.85848725261e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 18.0568740612
+	test_h1_range_x_mean_u: 1.13083437468
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.46241161305
+	test_h1_row_norms_mean: 2.09454699859
+	test_h1_row_norms_min: 0.776456857238
+	test_objective: 1.21322230076
+	test_y_col_norms_max: 2.14341775673
+	test_y_col_norms_mean: 1.72450853903
+	test_y_col_norms_min: 1.28772715804
+	test_y_max_max_class: 0.902403091441
+	test_y_mean_max_class: 0.614953705623
+	test_y_min_max_class: 0.205092159063
+	test_y_misclass: 0.321655532019
+	test_y_nll: 0.906680743854
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.327286242192
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 6.701042
+	train_h0_col_norms_max: 4.00474108048
+	train_h0_col_norms_mean: 2.07109216224
+	train_h0_col_norms_min: 0.935929227494
+	train_h0_max_x_max_u: 34.4731046317
+	train_h0_max_x_mean_u: 5.70045520098
+	train_h0_max_x_min_u: 0.247711130247
+	train_h0_mean_x_max_u: 3.53828325263
+	train_h0_mean_x_mean_u: 0.62382385485
+	train_h0_mean_x_min_u: 0.00753265910422
+	train_h0_min_x_max_u: 0.113170954346
+	train_h0_min_x_mean_u: 0.00088430990363
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 34.4709992734
+	train_h0_range_x_mean_u: 5.69957089107
+	train_h0_range_x_min_u: 0.247711130247
+	train_h0_row_norms_max: 4.57728507363
+	train_h0_row_norms_mean: 3.09832222236
+	train_h0_row_norms_min: 1.68476325157
+	train_h1_col_norms_max: 4.92279134087
+	train_h1_col_norms_mean: 2.11418760535
+	train_h1_col_norms_min: 0.811912183279
+	train_h1_max_x_max_u: 17.3044125142
+	train_h1_max_x_mean_u: 1.05763393691
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 3.26069323235
+	train_h1_mean_x_mean_u: 0.131638471858
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.0111938669718
+	train_h1_min_x_mean_u: 5.8896483983e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 17.2932186473
+	train_h1_range_x_mean_u: 1.05757504042
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.46241161305
+	train_h1_row_norms_mean: 2.09454699859
+	train_h1_row_norms_min: 0.776456857238
+	train_objective: 1.20716293004
+	train_y_col_norms_max: 2.14341775673
+	train_y_col_norms_mean: 1.72450853903
+	train_y_col_norms_min: 1.28772715804
+	train_y_max_max_class: 0.894640919963
+	train_y_mean_max_class: 0.616212352867
+	train_y_min_max_class: 0.207877926633
+	train_y_misclass: 0.313469991926
+	train_y_nll: 0.893554753222
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.327286242192
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 2.918729
+	valid_h0_col_norms_max: 4.00474108048
+	valid_h0_col_norms_mean: 2.07109216224
+	valid_h0_col_norms_min: 0.935929227495
+	valid_h0_max_x_max_u: 34.5983541406
+	valid_h0_max_x_mean_u: 5.61465038485
+	valid_h0_max_x_min_u: 0.259843713354
+	valid_h0_mean_x_max_u: 3.42946154518
+	valid_h0_mean_x_mean_u: 0.615587746234
+	valid_h0_mean_x_min_u: 0.00791016428512
+	valid_h0_min_x_max_u: 0.129631654376
+	valid_h0_min_x_mean_u: 0.00106374218112
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 34.5983541406
+	valid_h0_range_x_mean_u: 5.61358664267
+	valid_h0_range_x_min_u: 0.259843713354
+	valid_h0_row_norms_max: 4.57728507363
+	valid_h0_row_norms_mean: 3.09832222236
+	valid_h0_row_norms_min: 1.68476325157
+	valid_h1_col_norms_max: 4.92279134087
+	valid_h1_col_norms_mean: 2.11418760535
+	valid_h1_col_norms_min: 0.811912183279
+	valid_h1_max_x_max_u: 16.9165079656
+	valid_h1_max_x_mean_u: 1.05015701352
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 3.09874440935
+	valid_h1_mean_x_mean_u: 0.127155626641
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0215324196024
+	valid_h1_min_x_mean_u: 0.000107662098012
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 16.9002170998
+	valid_h1_range_x_mean_u: 1.05004935143
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.46241161305
+	valid_h1_row_norms_mean: 2.09454699859
+	valid_h1_row_norms_min: 0.776456857238
+	valid_objective: 1.23463199728
+	valid_y_col_norms_max: 2.14341775673
+	valid_y_col_norms_mean: 1.72450853903
+	valid_y_col_norms_min: 1.28772715804
+	valid_y_max_max_class: 0.895304366696
+	valid_y_mean_max_class: 0.613059778888
+	valid_y_min_max_class: 0.209430740831
+	valid_y_misclass: 0.320451896351
+	valid_y_nll: 0.908154661127
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.327286242192
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.104714 seconds
+Time this epoch: 3.951968 seconds
+Monitoring step:
+	Epochs seen: 4
+	Batches seen: 1784
+	Examples seen: 178352
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.93224740156
+	test_h0_col_norms_mean: 2.06053574536
+	test_h0_col_norms_min: 0.962249910698
+	test_h0_max_x_max_u: 33.7015406861
+	test_h0_max_x_mean_u: 5.98861723868
+	test_h0_max_x_min_u: 0.246637632271
+	test_h0_mean_x_max_u: 3.50856225151
+	test_h0_mean_x_mean_u: 0.644642763331
+	test_h0_mean_x_min_u: 0.00668617139751
+	test_h0_min_x_max_u: 0.0883183111854
+	test_h0_min_x_mean_u: 0.000709338320647
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 33.7015406861
+	test_h0_range_x_mean_u: 5.98790790036
+	test_h0_range_x_min_u: 0.246637632271
+	test_h0_row_norms_max: 4.56034271087
+	test_h0_row_norms_mean: 3.08065863022
+	test_h0_row_norms_min: 1.67990353974
+	test_h1_col_norms_max: 4.91932547152
+	test_h1_col_norms_mean: 2.1143763418
+	test_h1_col_norms_min: 0.811608510009
+	test_h1_max_x_max_u: 15.5716786053
+	test_h1_max_x_mean_u: 1.19240427521
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.5643139278
+	test_h1_mean_x_mean_u: 0.140203261157
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.00126586661642
+	test_h1_min_x_mean_u: 6.32933308211e-06
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 15.5716786053
+	test_h1_range_x_mean_u: 1.19239794587
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.46818507271
+	test_h1_row_norms_mean: 2.09575283573
+	test_h1_row_norms_min: 0.784524595023
+	test_objective: 1.2680964223
+	test_y_col_norms_max: 2.12635917
+	test_y_col_norms_mean: 1.73759536626
+	test_y_col_norms_min: 1.31430461141
+	test_y_max_max_class: 0.86788239774
+	test_y_mean_max_class: 0.59842960519
+	test_y_min_max_class: 0.206141631962
+	test_y_misclass: 0.313345282711
+	test_y_nll: 0.880271712798
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.330328282507
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 8.736806
+	train_h0_col_norms_max: 3.93224740156
+	train_h0_col_norms_mean: 2.06053574536
+	train_h0_col_norms_min: 0.962249910698
+	train_h0_max_x_max_u: 33.9934821775
+	train_h0_max_x_mean_u: 5.70399312076
+	train_h0_max_x_min_u: 0.218125291096
+	train_h0_mean_x_max_u: 3.54864927538
+	train_h0_mean_x_mean_u: 0.629396163437
+	train_h0_mean_x_min_u: 0.0056193671651
+	train_h0_min_x_max_u: 0.105774138807
+	train_h0_min_x_mean_u: 0.000871141795693
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 33.9926332274
+	train_h0_range_x_mean_u: 5.70312197897
+	train_h0_range_x_min_u: 0.218125291096
+	train_h0_row_norms_max: 4.56034271087
+	train_h0_row_norms_mean: 3.08065863022
+	train_h0_row_norms_min: 1.67990353974
+	train_h1_col_norms_max: 4.91932547152
+	train_h1_col_norms_mean: 2.1143763418
+	train_h1_col_norms_min: 0.811608510009
+	train_h1_max_x_max_u: 15.295839464
+	train_h1_max_x_mean_u: 1.12881561394
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 2.65520430806
+	train_h1_mean_x_mean_u: 0.140874222235
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.0102903376638
+	train_h1_min_x_mean_u: 6.24621715652e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 15.295839464
+	train_h1_range_x_mean_u: 1.12875315176
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.46818507271
+	train_h1_row_norms_mean: 2.09575283573
+	train_h1_row_norms_min: 0.784524595023
+	train_objective: 1.18241183601
+	train_y_col_norms_max: 2.12635917
+	train_y_col_norms_mean: 1.73759536626
+	train_y_col_norms_min: 1.31430461141
+	train_y_max_max_class: 0.860534989088
+	train_y_mean_max_class: 0.599962629611
+	train_y_min_max_class: 0.206252658914
+	train_y_misclass: 0.301314254956
+	train_y_nll: 0.864689583824
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.330328282507
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 3.951968
+	valid_h0_col_norms_max: 3.93224740156
+	valid_h0_col_norms_mean: 2.06053574536
+	valid_h0_col_norms_min: 0.962249910698
+	valid_h0_max_x_max_u: 34.0473747317
+	valid_h0_max_x_mean_u: 5.62374164389
+	valid_h0_max_x_min_u: 0.214411991132
+	valid_h0_mean_x_max_u: 3.4462989428
+	valid_h0_mean_x_mean_u: 0.62086828602
+	valid_h0_mean_x_min_u: 0.00537115284617
+	valid_h0_min_x_max_u: 0.119450786499
+	valid_h0_min_x_mean_u: 0.00106541103053
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 34.0473747317
+	valid_h0_range_x_mean_u: 5.62267623285
+	valid_h0_range_x_min_u: 0.214411991132
+	valid_h0_row_norms_max: 4.56034271087
+	valid_h0_row_norms_mean: 3.08065863022
+	valid_h0_row_norms_min: 1.67990353974
+	valid_h1_col_norms_max: 4.91932547152
+	valid_h1_col_norms_mean: 2.1143763418
+	valid_h1_col_norms_min: 0.811608510009
+	valid_h1_max_x_max_u: 14.7088989202
+	valid_h1_max_x_mean_u: 1.12363247923
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.52547495411
+	valid_h1_mean_x_mean_u: 0.135585788263
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0198035500137
+	valid_h1_min_x_mean_u: 0.000156433674916
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 14.7088989202
+	valid_h1_range_x_mean_u: 1.12347604556
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.46818507271
+	valid_h1_row_norms_mean: 2.09575283573
+	valid_h1_row_norms_min: 0.784524595023
+	valid_objective: 1.20816460174
+	valid_y_col_norms_max: 2.12635917
+	valid_y_col_norms_mean: 1.73759536626
+	valid_y_col_norms_min: 1.31430461141
+	valid_y_max_max_class: 0.855770489819
+	valid_y_mean_max_class: 0.594393518287
+	valid_y_min_max_class: 0.208041380205
+	valid_y_misclass: 0.312651304582
+	valid_y_nll: 0.886425261083
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.330328282507
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.111531 seconds
+Time this epoch: 3.714622 seconds
+Monitoring step:
+	Epochs seen: 5
+	Batches seen: 2230
+	Examples seen: 222940
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.86389745157
+	test_h0_col_norms_mean: 2.04969295952
+	test_h0_col_norms_min: 0.949839687739
+	test_h0_max_x_max_u: 32.987008459
+	test_h0_max_x_mean_u: 5.98060569056
+	test_h0_max_x_min_u: 0.222430594287
+	test_h0_mean_x_max_u: 3.50671841015
+	test_h0_mean_x_mean_u: 0.64277368508
+	test_h0_mean_x_min_u: 0.00625941080655
+	test_h0_min_x_max_u: 0.100294150756
+	test_h0_min_x_mean_u: 0.000798929423425
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 32.987008459
+	test_h0_range_x_mean_u: 5.97980676114
+	test_h0_range_x_min_u: 0.222430594287
+	test_h0_row_norms_max: 4.53018419925
+	test_h0_row_norms_mean: 3.06277876461
+	test_h0_row_norms_min: 1.66518218036
+	test_h1_col_norms_max: 4.91894957997
+	test_h1_col_norms_mean: 2.11460746805
+	test_h1_col_norms_min: 0.811758636575
+	test_h1_max_x_max_u: 17.3370357477
+	test_h1_max_x_mean_u: 1.25997823591
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.91247375308
+	test_h1_mean_x_mean_u: 0.154661110767
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.0133678752458
+	test_h1_min_x_mean_u: 6.68393762291e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 17.3370357477
+	test_h1_range_x_mean_u: 1.25991139653
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.45548236063
+	test_h1_row_norms_mean: 2.09627668031
+	test_h1_row_norms_min: 0.787633676029
+	test_objective: 1.18021469681
+	test_y_col_norms_max: 2.1148644962
+	test_y_col_norms_mean: 1.7593912207
+	test_y_col_norms_min: 1.36176270111
+	test_y_max_max_class: 0.875329149489
+	test_y_mean_max_class: 0.602627081664
+	test_y_min_max_class: 0.200748688421
+	test_y_misclass: 0.303079680626
+	test_y_nll: 0.864747532696
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.335174309776
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 9.79946
+	train_h0_col_norms_max: 3.86389745157
+	train_h0_col_norms_mean: 2.04969295952
+	train_h0_col_norms_min: 0.949839687739
+	train_h0_max_x_max_u: 33.1759952847
+	train_h0_max_x_mean_u: 5.68652411093
+	train_h0_max_x_min_u: 0.194466746278
+	train_h0_mean_x_max_u: 3.54791120032
+	train_h0_mean_x_mean_u: 0.627207243543
+	train_h0_mean_x_min_u: 0.00511880665622
+	train_h0_min_x_max_u: 0.101212969107
+	train_h0_min_x_mean_u: 0.000874673574604
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 33.1756260104
+	train_h0_range_x_mean_u: 5.68564943735
+	train_h0_range_x_min_u: 0.194466746278
+	train_h0_row_norms_max: 4.53018419925
+	train_h0_row_norms_mean: 3.06277876461
+	train_h0_row_norms_min: 1.66518218036
+	train_h1_col_norms_max: 4.91894957997
+	train_h1_col_norms_mean: 2.11460746805
+	train_h1_col_norms_min: 0.811758636575
+	train_h1_max_x_max_u: 17.0229577454
+	train_h1_max_x_mean_u: 1.18440376845
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 3.0042871815
+	train_h1_mean_x_mean_u: 0.154993190357
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00989047000452
+	train_h1_min_x_mean_u: 7.68142958454e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 17.0214281453
+	train_h1_range_x_mean_u: 1.18432695416
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.45548236063
+	train_h1_row_norms_mean: 2.09627668031
+	train_h1_row_norms_min: 0.787633676029
+	train_objective: 1.17817552212
+	train_y_col_norms_max: 2.1148644962
+	train_y_col_norms_mean: 1.7593912207
+	train_y_col_norms_min: 1.36176270111
+	train_y_max_max_class: 0.862081723579
+	train_y_mean_max_class: 0.602016977934
+	train_y_min_max_class: 0.201611465165
+	train_y_misclass: 0.294249573876
+	train_y_nll: 0.855420969938
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.335174309776
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 3.714622
+	valid_h0_col_norms_max: 3.86389745157
+	valid_h0_col_norms_mean: 2.04969295952
+	valid_h0_col_norms_min: 0.949839687739
+	valid_h0_max_x_max_u: 33.2006639937
+	valid_h0_max_x_mean_u: 5.61379114657
+	valid_h0_max_x_min_u: 0.189186347628
+	valid_h0_mean_x_max_u: 3.44076559587
+	valid_h0_mean_x_mean_u: 0.618313881048
+	valid_h0_mean_x_min_u: 0.00432093107774
+	valid_h0_min_x_max_u: 0.115963473014
+	valid_h0_min_x_mean_u: 0.00101943485194
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 33.2006639937
+	valid_h0_range_x_mean_u: 5.61277171172
+	valid_h0_range_x_min_u: 0.189186347628
+	valid_h0_row_norms_max: 4.53018419925
+	valid_h0_row_norms_mean: 3.06277876461
+	valid_h0_row_norms_min: 1.66518218036
+	valid_h1_col_norms_max: 4.91894957997
+	valid_h1_col_norms_mean: 2.11460746805
+	valid_h1_col_norms_min: 0.811758636575
+	valid_h1_max_x_max_u: 16.4506180756
+	valid_h1_max_x_mean_u: 1.17972671863
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.85503026378
+	valid_h1_mean_x_mean_u: 0.148725522883
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0150266558648
+	valid_h1_min_x_mean_u: 0.000161038914708
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 16.438351732
+	valid_h1_range_x_mean_u: 1.17956567971
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.45548236063
+	valid_h1_row_norms_mean: 2.09627668031
+	valid_h1_row_norms_min: 0.787633676029
+	valid_objective: 1.19771423866
+	valid_y_col_norms_max: 2.1148644962
+	valid_y_col_norms_mean: 1.7593912207
+	valid_y_col_norms_min: 1.36176270111
+	valid_y_max_max_class: 0.852114852319
+	valid_y_mean_max_class: 0.598517349017
+	valid_y_min_max_class: 0.202222304056
+	valid_y_misclass: 0.301264233838
+	valid_y_nll: 0.871867217244
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.335174309776
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.112035 seconds
+Time this epoch: 4.067355 seconds
+Monitoring step:
+	Epochs seen: 6
+	Batches seen: 2676
+	Examples seen: 267528
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.80012176482
+	test_h0_col_norms_mean: 2.03958252277
+	test_h0_col_norms_min: 0.946129513854
+	test_h0_max_x_max_u: 32.5501083851
+	test_h0_max_x_mean_u: 5.97061830177
+	test_h0_max_x_min_u: 0.189198092865
+	test_h0_mean_x_max_u: 3.50243817423
+	test_h0_mean_x_mean_u: 0.642902582136
+	test_h0_mean_x_min_u: 0.00592705090305
+	test_h0_min_x_max_u: 0.0912225063165
+	test_h0_min_x_mean_u: 0.000877198519796
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 32.5501083851
+	test_h0_range_x_mean_u: 5.96974110325
+	test_h0_range_x_min_u: 0.189198092865
+	test_h0_row_norms_max: 4.49812312394
+	test_h0_row_norms_mean: 3.04555897591
+	test_h0_row_norms_min: 1.62463991969
+	test_h1_col_norms_max: 4.91883942328
+	test_h1_col_norms_mean: 2.11575701621
+	test_h1_col_norms_min: 0.811971230349
+	test_h1_max_x_max_u: 16.1093214614
+	test_h1_max_x_mean_u: 1.16846317672
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.92994149199
+	test_h1_mean_x_mean_u: 0.141338233315
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.00703301809239
+	test_h1_min_x_mean_u: 3.5165090462e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 16.1093214614
+	test_h1_range_x_mean_u: 1.16842801163
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.44489019541
+	test_h1_row_norms_mean: 2.09763619689
+	test_h1_row_norms_min: 0.808144743895
+	test_objective: 1.1616872143
+	test_y_col_norms_max: 2.13023115661
+	test_y_col_norms_mean: 1.78028120842
+	test_y_col_norms_min: 1.44039650116
+	test_y_max_max_class: 0.898416989166
+	test_y_mean_max_class: 0.630422511749
+	test_y_min_max_class: 0.206482064017
+	test_y_misclass: 0.296072999837
+	test_y_nll: 0.835316527668
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.339533873952
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 9.734466
+	train_h0_col_norms_max: 3.80012176482
+	train_h0_col_norms_mean: 2.03958252277
+	train_h0_col_norms_min: 0.946129513854
+	train_h0_max_x_max_u: 32.7132585614
+	train_h0_max_x_mean_u: 5.67314145849
+	train_h0_max_x_min_u: 0.179877580422
+	train_h0_mean_x_max_u: 3.53842193197
+	train_h0_mean_x_mean_u: 0.62689193161
+	train_h0_mean_x_min_u: 0.00481732476581
+	train_h0_min_x_max_u: 0.0969671331576
+	train_h0_min_x_mean_u: 0.000859069819106
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 32.7131528806
+	train_h0_range_x_mean_u: 5.67228238868
+	train_h0_range_x_min_u: 0.179877580422
+	train_h0_row_norms_max: 4.49812312394
+	train_h0_row_norms_mean: 3.04555897591
+	train_h0_row_norms_min: 1.62463991969
+	train_h1_col_norms_max: 4.91883942328
+	train_h1_col_norms_mean: 2.11575701621
+	train_h1_col_norms_min: 0.811971230349
+	train_h1_max_x_max_u: 15.7748568608
+	train_h1_max_x_mean_u: 1.09627541479
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 3.04680420237
+	train_h1_mean_x_mean_u: 0.14219282124
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00909447361527
+	train_h1_min_x_mean_u: 7.52462591468e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 15.7721844492
+	train_h1_range_x_mean_u: 1.09620016853
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.44489019541
+	train_h1_row_norms_mean: 2.09763619689
+	train_h1_row_norms_min: 0.808144743895
+	train_objective: 1.12656027279
+	train_y_col_norms_max: 2.13023115661
+	train_y_col_norms_mean: 1.78028120842
+	train_y_col_norms_min: 1.44039650116
+	train_y_max_max_class: 0.893252243116
+	train_y_mean_max_class: 0.630929301418
+	train_y_min_max_class: 0.20658280443
+	train_y_misclass: 0.289921054992
+	train_y_nll: 0.827313151681
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.339533873952
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 4.067355
+	valid_h0_col_norms_max: 3.80012176482
+	valid_h0_col_norms_mean: 2.03958252277
+	valid_h0_col_norms_min: 0.946129513854
+	valid_h0_max_x_max_u: 32.6174969735
+	valid_h0_max_x_mean_u: 5.60157025233
+	valid_h0_max_x_min_u: 0.168352249687
+	valid_h0_mean_x_max_u: 3.4382365845
+	valid_h0_mean_x_mean_u: 0.618147616743
+	valid_h0_mean_x_min_u: 0.00418013342904
+	valid_h0_min_x_max_u: 0.10572904683
+	valid_h0_min_x_mean_u: 0.000994537758838
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 32.6174969735
+	valid_h0_range_x_mean_u: 5.60057571457
+	valid_h0_range_x_min_u: 0.168352249687
+	valid_h0_row_norms_max: 4.49812312394
+	valid_h0_row_norms_mean: 3.04555897591
+	valid_h0_row_norms_min: 1.62463991969
+	valid_h1_col_norms_max: 4.91883942328
+	valid_h1_col_norms_mean: 2.11575701621
+	valid_h1_col_norms_min: 0.811971230349
+	valid_h1_max_x_max_u: 15.3834813263
+	valid_h1_max_x_mean_u: 1.08620690098
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.89150978095
+	valid_h1_mean_x_mean_u: 0.136461152794
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0176485358105
+	valid_h1_min_x_mean_u: 0.000146994565043
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 15.3764322751
+	valid_h1_range_x_mean_u: 1.08605990641
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.44489019541
+	valid_h1_row_norms_mean: 2.09763619689
+	valid_h1_row_norms_min: 0.808144743895
+	valid_objective: 1.14156807187
+	valid_y_col_norms_max: 2.13023115661
+	valid_y_col_norms_mean: 1.78028120842
+	valid_y_col_norms_min: 1.44039650116
+	valid_y_max_max_class: 0.886913356795
+	valid_y_mean_max_class: 0.625854252296
+	valid_y_min_max_class: 0.205095488052
+	valid_y_misclass: 0.299470994351
+	valid_y_nll: 0.847732760773
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.339533873952
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.107564 seconds
+Time this epoch: 3.599189 seconds
+Monitoring step:
+	Epochs seen: 7
+	Batches seen: 3122
+	Examples seen: 312116
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.74008479648
+	test_h0_col_norms_mean: 2.02888595892
+	test_h0_col_norms_min: 0.9363534044
+	test_h0_max_x_max_u: 32.0160529951
+	test_h0_max_x_mean_u: 5.94280974685
+	test_h0_max_x_min_u: 0.207179475811
+	test_h0_mean_x_max_u: 3.4479980414
+	test_h0_mean_x_mean_u: 0.641729802066
+	test_h0_mean_x_min_u: 0.00597839176953
+	test_h0_min_x_max_u: 0.0798256173921
+	test_h0_min_x_mean_u: 0.000849135077077
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 32.0160529951
+	test_h0_range_x_mean_u: 5.94196061177
+	test_h0_range_x_min_u: 0.207179475811
+	test_h0_row_norms_max: 4.47808126208
+	test_h0_row_norms_mean: 3.02699624829
+	test_h0_row_norms_min: 1.59070841614
+	test_h1_col_norms_max: 4.91666380057
+	test_h1_col_norms_mean: 2.11457956778
+	test_h1_col_norms_min: 0.812205374166
+	test_h1_max_x_max_u: 15.9956825268
+	test_h1_max_x_mean_u: 1.20698106878
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.66142471045
+	test_h1_mean_x_mean_u: 0.153485033039
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.00215671928959
+	test_h1_min_x_mean_u: 1.07835964479e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 15.9956825268
+	test_h1_range_x_mean_u: 1.20697028518
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.45807132542
+	test_h1_row_norms_mean: 2.09672766118
+	test_h1_row_norms_min: 0.812524365422
+	test_objective: 1.14440711383
+	test_y_col_norms_max: 2.16486799402
+	test_y_col_norms_mean: 1.78327132751
+	test_y_col_norms_min: 1.42286243786
+	test_y_max_max_class: 0.902920463145
+	test_y_mean_max_class: 0.65125225138
+	test_y_min_max_class: 0.206592047078
+	test_y_misclass: 0.29851719081
+	test_y_nll: 0.822385292755
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.340049891365
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 9.890756
+	train_h0_col_norms_max: 3.74008479648
+	train_h0_col_norms_mean: 2.02888595892
+	train_h0_col_norms_min: 0.9363534044
+	train_h0_max_x_max_u: 32.198132903
+	train_h0_max_x_mean_u: 5.64392089019
+	train_h0_max_x_min_u: 0.18482064053
+	train_h0_mean_x_max_u: 3.50784112306
+	train_h0_mean_x_mean_u: 0.625303058652
+	train_h0_mean_x_min_u: 0.00484927129095
+	train_h0_min_x_max_u: 0.0860457921677
+	train_h0_min_x_mean_u: 0.000829443755583
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 32.198132903
+	train_h0_range_x_mean_u: 5.64309144643
+	train_h0_range_x_min_u: 0.18482064053
+	train_h0_row_norms_max: 4.47808126208
+	train_h0_row_norms_mean: 3.02699624829
+	train_h0_row_norms_min: 1.59070841614
+	train_h1_col_norms_max: 4.91666380057
+	train_h1_col_norms_mean: 2.11457956778
+	train_h1_col_norms_min: 0.812205374166
+	train_h1_max_x_max_u: 15.7039831639
+	train_h1_max_x_mean_u: 1.12758567968
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 2.72210577805
+	train_h1_mean_x_mean_u: 0.154317924088
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00810442077673
+	train_h1_min_x_mean_u: 5.58979814639e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 15.7039831639
+	train_h1_range_x_mean_u: 1.1275297817
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.45807132542
+	train_h1_row_norms_mean: 2.09672766118
+	train_h1_row_norms_min: 0.812524365422
+	train_objective: 1.12393598968
+	train_y_col_norms_max: 2.16486799402
+	train_y_col_norms_mean: 1.78327132751
+	train_y_col_norms_min: 1.42286243786
+	train_y_max_max_class: 0.894395829066
+	train_y_mean_max_class: 0.651721178889
+	train_y_min_max_class: 0.211123903149
+	train_y_misclass: 0.292589934512
+	train_y_nll: 0.813964550718
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.340049891365
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 3.599189
+	valid_h0_col_norms_max: 3.74008479648
+	valid_h0_col_norms_mean: 2.02888595892
+	valid_h0_col_norms_min: 0.9363534044
+	valid_h0_max_x_max_u: 32.0029965426
+	valid_h0_max_x_mean_u: 5.57491234883
+	valid_h0_max_x_min_u: 0.174463110376
+	valid_h0_mean_x_max_u: 3.39451281425
+	valid_h0_mean_x_mean_u: 0.616485915224
+	valid_h0_mean_x_min_u: 0.00406057497359
+	valid_h0_min_x_max_u: 0.0882660438153
+	valid_h0_min_x_mean_u: 0.000874739628853
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 32.0029965426
+	valid_h0_range_x_mean_u: 5.57403760921
+	valid_h0_range_x_min_u: 0.174463110376
+	valid_h0_row_norms_max: 4.47808126208
+	valid_h0_row_norms_mean: 3.02699624829
+	valid_h0_row_norms_min: 1.59070841614
+	valid_h1_col_norms_max: 4.91666380057
+	valid_h1_col_norms_mean: 2.11457956778
+	valid_h1_col_norms_min: 0.812205374166
+	valid_h1_max_x_max_u: 15.1227863794
+	valid_h1_max_x_mean_u: 1.11899217072
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.58624880031
+	valid_h1_mean_x_mean_u: 0.147940682893
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0149165575016
+	valid_h1_min_x_mean_u: 0.00010734679074
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 15.1227863794
+	valid_h1_range_x_mean_u: 1.11888482393
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.45807132542
+	valid_h1_row_norms_mean: 2.09672766118
+	valid_h1_row_norms_min: 0.812524365422
+	valid_objective: 1.1429214302
+	valid_y_col_norms_max: 2.16486799402
+	valid_y_col_norms_mean: 1.78327132751
+	valid_y_col_norms_min: 1.42286243786
+	valid_y_max_max_class: 0.886945759788
+	valid_y_mean_max_class: 0.646725921446
+	valid_y_min_max_class: 0.210919633229
+	valid_y_misclass: 0.302250515556
+	valid_y_nll: 0.836130018941
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.340049891365
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.112902 seconds
+Time this epoch: 3.661091 seconds
+Monitoring step:
+	Epochs seen: 8
+	Batches seen: 3568
+	Examples seen: 356704
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.68944400466
+	test_h0_col_norms_mean: 2.0195771503
+	test_h0_col_norms_min: 0.924557184873
+	test_h0_max_x_max_u: 31.1368211753
+	test_h0_max_x_mean_u: 5.94293229836
+	test_h0_max_x_min_u: 0.203290054438
+	test_h0_mean_x_max_u: 3.40702495185
+	test_h0_mean_x_mean_u: 0.641361283513
+	test_h0_mean_x_min_u: 0.00583454382125
+	test_h0_min_x_max_u: 0.0815938546459
+	test_h0_min_x_mean_u: 0.000861631912935
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 31.1368211753
+	test_h0_range_x_mean_u: 5.94207066645
+	test_h0_range_x_min_u: 0.203290054438
+	test_h0_row_norms_max: 4.45621278073
+	test_h0_row_norms_mean: 3.00916387168
+	test_h0_row_norms_min: 1.5421831768
+	test_h1_col_norms_max: 4.91613193566
+	test_h1_col_norms_mean: 2.11429352433
+	test_h1_col_norms_min: 0.812781042989
+	test_h1_max_x_max_u: 16.8522744623
+	test_h1_max_x_mean_u: 1.18907096852
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.80488837438
+	test_h1_mean_x_mean_u: 0.148644788594
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.0
+	test_h1_min_x_mean_u: 0.0
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 16.8522744623
+	test_h1_range_x_mean_u: 1.18907096852
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.46418985952
+	test_h1_row_norms_mean: 2.09736081251
+	test_h1_row_norms_min: 0.828603354988
+	test_objective: 1.18554836382
+	test_y_col_norms_max: 2.14878204565
+	test_y_col_norms_mean: 1.7944334914
+	test_y_col_norms_min: 1.4621156241
+	test_y_max_max_class: 0.875254038271
+	test_y_mean_max_class: 0.650706714135
+	test_y_min_max_class: 0.209078616942
+	test_y_misclass: 0.296561838032
+	test_y_nll: 0.813450185548
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.341873884885
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 9.487185
+	train_h0_col_norms_max: 3.68944400466
+	train_h0_col_norms_mean: 2.0195771503
+	train_h0_col_norms_min: 0.924557184873
+	train_h0_max_x_max_u: 31.4376203707
+	train_h0_max_x_mean_u: 5.62779254418
+	train_h0_max_x_min_u: 0.176680367902
+	train_h0_mean_x_max_u: 3.45378260819
+	train_h0_mean_x_mean_u: 0.624896742907
+	train_h0_mean_x_min_u: 0.0048824386573
+	train_h0_min_x_max_u: 0.0970823678598
+	train_h0_min_x_mean_u: 0.000862110093151
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 31.4376203707
+	train_h0_range_x_mean_u: 5.62693043408
+	train_h0_range_x_min_u: 0.176680367902
+	train_h0_row_norms_max: 4.45621278073
+	train_h0_row_norms_mean: 3.00916387168
+	train_h0_row_norms_min: 1.5421831768
+	train_h1_col_norms_max: 4.91613193566
+	train_h1_col_norms_mean: 2.11429352433
+	train_h1_col_norms_min: 0.812781042989
+	train_h1_max_x_max_u: 16.1903022095
+	train_h1_max_x_mean_u: 1.10923048766
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 2.84025141067
+	train_h1_mean_x_mean_u: 0.149572878895
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00607354558833
+	train_h1_min_x_mean_u: 3.90284976749e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 16.1884151615
+	train_h1_range_x_mean_u: 1.10919145916
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.46418985952
+	train_h1_row_norms_mean: 2.09736081251
+	train_h1_row_norms_min: 0.828603354988
+	train_objective: 1.13807790324
+	train_y_col_norms_max: 2.14878204565
+	train_y_col_norms_mean: 1.7944334914
+	train_y_col_norms_min: 1.4621156241
+	train_y_max_max_class: 0.864643868479
+	train_y_mean_max_class: 0.649608049525
+	train_y_min_max_class: 0.212204451223
+	train_y_misclass: 0.288956669956
+	train_y_nll: 0.80336195732
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.341873884885
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 3.661091
+	valid_h0_col_norms_max: 3.68944400466
+	valid_h0_col_norms_mean: 2.0195771503
+	valid_h0_col_norms_min: 0.924557184873
+	valid_h0_max_x_max_u: 31.1812610557
+	valid_h0_max_x_mean_u: 5.56198181288
+	valid_h0_max_x_min_u: 0.195151976627
+	valid_h0_mean_x_max_u: 3.35216794106
+	valid_h0_mean_x_mean_u: 0.615858833012
+	valid_h0_mean_x_min_u: 0.00471928051228
+	valid_h0_min_x_max_u: 0.104854326992
+	valid_h0_min_x_mean_u: 0.000977727045793
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 31.1812610557
+	valid_h0_range_x_mean_u: 5.56100408583
+	valid_h0_range_x_min_u: 0.195151976627
+	valid_h0_row_norms_max: 4.45621278073
+	valid_h0_row_norms_mean: 3.00916387168
+	valid_h0_row_norms_min: 1.5421831768
+	valid_h1_col_norms_max: 4.91613193566
+	valid_h1_col_norms_mean: 2.11429352433
+	valid_h1_col_norms_min: 0.812781042989
+	valid_h1_max_x_max_u: 16.0667515019
+	valid_h1_max_x_mean_u: 1.10825757103
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.70641453962
+	valid_h1_mean_x_mean_u: 0.144000391312
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0125081451338
+	valid_h1_min_x_mean_u: 6.32043015039e-05
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 16.0606975123
+	valid_h1_range_x_mean_u: 1.10819436673
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.46418985952
+	valid_h1_row_norms_mean: 2.09736081251
+	valid_h1_row_norms_min: 0.828603354988
+	valid_objective: 1.17846714438
+	valid_y_col_norms_max: 2.14878204565
+	valid_y_col_norms_mean: 1.7944334914
+	valid_y_col_norms_min: 1.4621156241
+	valid_y_max_max_class: 0.851389612859
+	valid_y_mean_max_class: 0.644697270917
+	valid_y_min_max_class: 0.214406946904
+	valid_y_misclass: 0.298933022505
+	valid_y_nll: 0.826147812932
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.341873884885
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.098178 seconds
+Time this epoch: 6.146351 seconds
+Monitoring step:
+	Epochs seen: 9
+	Batches seen: 4014
+	Examples seen: 401292
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.64028683665
+	test_h0_col_norms_mean: 2.00997524176
+	test_h0_col_norms_min: 0.965359865016
+	test_h0_max_x_max_u: 30.4847570397
+	test_h0_max_x_mean_u: 5.9101292405
+	test_h0_max_x_min_u: 0.183840535808
+	test_h0_mean_x_max_u: 3.37465749309
+	test_h0_mean_x_mean_u: 0.637103338514
+	test_h0_mean_x_min_u: 0.00472653873048
+	test_h0_min_x_max_u: 0.0716980667077
+	test_h0_min_x_mean_u: 0.000855840405336
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 30.4847570397
+	test_h0_range_x_mean_u: 5.90927340009
+	test_h0_range_x_min_u: 0.183840535808
+	test_h0_row_norms_max: 4.44511969099
+	test_h0_row_norms_mean: 2.99151687151
+	test_h0_row_norms_min: 1.53714906189
+	test_h1_col_norms_max: 4.91418848595
+	test_h1_col_norms_mean: 2.1145194601
+	test_h1_col_norms_min: 0.812244302654
+	test_h1_max_x_max_u: 15.5159077399
+	test_h1_max_x_mean_u: 1.13340915891
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.58533122554
+	test_h1_mean_x_mean_u: 0.142803631466
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.0129533075634
+	test_h1_min_x_mean_u: 6.47665378171e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 15.5159077399
+	test_h1_range_x_mean_u: 1.13334439238
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.44323829816
+	test_h1_row_norms_mean: 2.09872848546
+	test_h1_row_norms_min: 0.858035570193
+	test_objective: 1.16298923919
+	test_y_col_norms_max: 2.17835276873
+	test_y_col_norms_mean: 1.81269258391
+	test_y_col_norms_min: 1.50699830566
+	test_y_max_max_class: 0.860920515926
+	test_y_mean_max_class: 0.606121895343
+	test_y_min_max_class: 0.203792974569
+	test_y_misclass: 0.295910053772
+	test_y_nll: 0.841241796363
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.346622914815
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 10.223833
+	train_h0_col_norms_max: 3.64028683665
+	train_h0_col_norms_mean: 2.00997524176
+	train_h0_col_norms_min: 0.965359865016
+	train_h0_max_x_max_u: 30.8637408945
+	train_h0_max_x_mean_u: 5.59373230522
+	train_h0_max_x_min_u: 0.165979448284
+	train_h0_mean_x_max_u: 3.43756314273
+	train_h0_mean_x_mean_u: 0.620638500588
+	train_h0_mean_x_min_u: 0.00393162485662
+	train_h0_min_x_max_u: 0.100493740437
+	train_h0_min_x_mean_u: 0.00090334501874
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 30.8637408945
+	train_h0_range_x_mean_u: 5.5928289602
+	train_h0_range_x_min_u: 0.165979448284
+	train_h0_row_norms_max: 4.44511969099
+	train_h0_row_norms_mean: 2.99151687151
+	train_h0_row_norms_min: 1.53714906189
+	train_h1_col_norms_max: 4.91418848595
+	train_h1_col_norms_mean: 2.1145194601
+	train_h1_col_norms_min: 0.812244302654
+	train_h1_max_x_max_u: 15.2055223923
+	train_h1_max_x_mean_u: 1.06463858414
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 2.65264316954
+	train_h1_mean_x_mean_u: 0.143863763199
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.00719349996374
+	train_h1_min_x_mean_u: 4.54749873052e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 15.2043654787
+	train_h1_range_x_mean_u: 1.06459310916
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.44323829816
+	train_h1_row_norms_mean: 2.09872848546
+	train_h1_row_norms_min: 0.858035570193
+	train_objective: 1.1210438807
+	train_y_col_norms_max: 2.17835276873
+	train_y_col_norms_mean: 1.81269258391
+	train_y_col_norms_min: 1.50699830566
+	train_y_max_max_class: 0.850339441798
+	train_y_mean_max_class: 0.607559682873
+	train_y_min_max_class: 0.20680299698
+	train_y_misclass: 0.285323405401
+	train_y_nll: 0.826866039105
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.346622914815
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 6.146351
+	valid_h0_col_norms_max: 3.64028683665
+	valid_h0_col_norms_mean: 2.00997524176
+	valid_h0_col_norms_min: 0.965359865016
+	valid_h0_max_x_max_u: 30.5603624152
+	valid_h0_max_x_mean_u: 5.52450983782
+	valid_h0_max_x_min_u: 0.18603567028
+	valid_h0_mean_x_max_u: 3.3251496722
+	valid_h0_mean_x_mean_u: 0.611420642875
+	valid_h0_mean_x_min_u: 0.00425820776992
+	valid_h0_min_x_max_u: 0.115167729693
+	valid_h0_min_x_mean_u: 0.00104658209574
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 30.5603624152
+	valid_h0_range_x_mean_u: 5.52346325572
+	valid_h0_range_x_min_u: 0.18603567028
+	valid_h0_row_norms_max: 4.44511969099
+	valid_h0_row_norms_mean: 2.99151687151
+	valid_h0_row_norms_min: 1.53714906189
+	valid_h1_col_norms_max: 4.91418848595
+	valid_h1_col_norms_mean: 2.1145194601
+	valid_h1_col_norms_min: 0.812244302654
+	valid_h1_max_x_max_u: 14.850115651
+	valid_h1_max_x_mean_u: 1.05336159812
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.52849991571
+	valid_h1_mean_x_mean_u: 0.137700254707
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0136943400644
+	valid_h1_min_x_mean_u: 9.40357945328e-05
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 14.850115651
+	valid_h1_range_x_mean_u: 1.05326756233
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.44323829816
+	valid_h1_row_norms_mean: 2.09872848546
+	valid_h1_row_norms_min: 0.858035570193
+	valid_objective: 1.13726089189
+	valid_y_col_norms_max: 2.17835276873
+	valid_y_col_norms_mean: 1.81269258391
+	valid_y_col_norms_min: 1.50699830566
+	valid_y_max_max_class: 0.841667522919
+	valid_y_mean_max_class: 0.601031499145
+	valid_y_min_max_class: 0.207613377328
+	valid_y_misclass: 0.291939388505
+	valid_y_nll: 0.848582444083
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.346622914815
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.107149 seconds
+Time this epoch: 3.671895 seconds
+Monitoring step:
+	Epochs seen: 10
+	Batches seen: 4460
+	Examples seen: 445880
+	learning_rate: 0.1
+	momentum: 0.5
+	test_h0_col_norms_max: 3.59174778128
+	test_h0_col_norms_mean: 1.99913132443
+	test_h0_col_norms_min: 0.971049796433
+	test_h0_max_x_max_u: 30.219652803
+	test_h0_max_x_mean_u: 5.88134246581
+	test_h0_max_x_min_u: 0.186761551957
+	test_h0_mean_x_max_u: 3.37211700881
+	test_h0_mean_x_mean_u: 0.632164985763
+	test_h0_mean_x_min_u: 0.00379083263964
+	test_h0_min_x_max_u: 0.06170528762
+	test_h0_min_x_mean_u: 0.000794799312846
+	test_h0_min_x_min_u: 0.0
+	test_h0_range_x_max_u: 30.219652803
+	test_h0_range_x_mean_u: 5.8805476665
+	test_h0_range_x_min_u: 0.186761551957
+	test_h0_row_norms_max: 4.41094810726
+	test_h0_row_norms_mean: 2.9734553008
+	test_h0_row_norms_min: 1.5196782318
+	test_h1_col_norms_max: 4.91476258141
+	test_h1_col_norms_mean: 2.11369713647
+	test_h1_col_norms_min: 0.813555677818
+	test_h1_max_x_max_u: 16.3628682707
+	test_h1_max_x_mean_u: 1.12955327664
+	test_h1_max_x_min_u: 0.0
+	test_h1_mean_x_max_u: 2.73418288747
+	test_h1_mean_x_mean_u: 0.139649428593
+	test_h1_mean_x_min_u: 0.0
+	test_h1_min_x_max_u: 0.013898413051
+	test_h1_min_x_mean_u: 6.94920652551e-05
+	test_h1_min_x_min_u: 0.0
+	test_h1_range_x_max_u: 16.3624385736
+	test_h1_range_x_mean_u: 1.12948378458
+	test_h1_range_x_min_u: 0.0
+	test_h1_row_norms_max: 4.43306583257
+	test_h1_row_norms_mean: 2.09838401214
+	test_h1_row_norms_min: 0.880397503604
+	test_objective: 1.13002421623
+	test_y_col_norms_max: 2.17599888814
+	test_y_col_norms_mean: 1.82253215869
+	test_y_col_norms_min: 1.49568320305
+	test_y_max_max_class: 0.882364402043
+	test_y_mean_max_class: 0.62078145309
+	test_y_min_max_class: 0.209576294667
+	test_y_misclass: 0.299168975069
+	test_y_nll: 0.833810609482
+	test_y_row_norms_max: 1.28391685083
+	test_y_row_norms_mean: 0.349608970243
+	test_y_row_norms_min: 0.0
+	total_seconds_last_epoch: 12.829214
+	train_h0_col_norms_max: 3.59174778128
+	train_h0_col_norms_mean: 1.99913132443
+	train_h0_col_norms_min: 0.971049796433
+	train_h0_max_x_max_u: 30.5493570865
+	train_h0_max_x_mean_u: 5.55165474703
+	train_h0_max_x_min_u: 0.14937835235
+	train_h0_mean_x_max_u: 3.43330210783
+	train_h0_mean_x_mean_u: 0.615985552989
+	train_h0_mean_x_min_u: 0.00320852280647
+	train_h0_min_x_max_u: 0.0791257117954
+	train_h0_min_x_mean_u: 0.000755324135026
+	train_h0_min_x_min_u: 0.0
+	train_h0_range_x_max_u: 30.5493570865
+	train_h0_range_x_mean_u: 5.55089942289
+	train_h0_range_x_min_u: 0.14937835235
+	train_h0_row_norms_max: 4.41094810726
+	train_h0_row_norms_mean: 2.9734553008
+	train_h0_row_norms_min: 1.5196782318
+	train_h1_col_norms_max: 4.91476258141
+	train_h1_col_norms_mean: 2.11369713647
+	train_h1_col_norms_min: 0.813555677818
+	train_h1_max_x_max_u: 16.2915995123
+	train_h1_max_x_mean_u: 1.05586713734
+	train_h1_max_x_min_u: 0.0
+	train_h1_mean_x_max_u: 2.84123306717
+	train_h1_mean_x_mean_u: 0.1405582542
+	train_h1_mean_x_min_u: 0.0
+	train_h1_min_x_max_u: 0.0107905191845
+	train_h1_min_x_mean_u: 8.57854262455e-05
+	train_h1_min_x_min_u: 0.0
+	train_h1_range_x_max_u: 16.2899522432
+	train_h1_range_x_mean_u: 1.05578135191
+	train_h1_range_x_min_u: 0.0
+	train_h1_row_norms_max: 4.43306583257
+	train_h1_row_norms_mean: 2.09838401214
+	train_h1_row_norms_min: 0.880397503604
+	train_objective: 1.10749142935
+	train_y_col_norms_max: 2.17599888814
+	train_y_col_norms_mean: 1.82253215869
+	train_y_col_norms_min: 1.49568320305
+	train_y_max_max_class: 0.877755583778
+	train_y_mean_max_class: 0.622807059769
+	train_y_min_max_class: 0.217912221376
+	train_y_misclass: 0.288665111689
+	train_y_nll: 0.821490305769
+	train_y_row_norms_max: 1.28391685083
+	train_y_row_norms_mean: 0.349608970243
+	train_y_row_norms_min: 0.0
+	training_seconds_this_epoch: 3.671895
+	valid_h0_col_norms_max: 3.59174778128
+	valid_h0_col_norms_mean: 1.99913132443
+	valid_h0_col_norms_min: 0.971049796433
+	valid_h0_max_x_max_u: 30.1531094372
+	valid_h0_max_x_mean_u: 5.48673944112
+	valid_h0_max_x_min_u: 0.155217875307
+	valid_h0_mean_x_max_u: 3.31602866317
+	valid_h0_mean_x_mean_u: 0.60651932003
+	valid_h0_mean_x_min_u: 0.00321736689338
+	valid_h0_min_x_max_u: 0.080434852956
+	valid_h0_min_x_mean_u: 0.000781697893794
+	valid_h0_min_x_min_u: 0.0
+	valid_h0_range_x_max_u: 30.1531094372
+	valid_h0_range_x_mean_u: 5.48595774323
+	valid_h0_range_x_min_u: 0.155217875307
+	valid_h0_row_norms_max: 4.41094810726
+	valid_h0_row_norms_mean: 2.9734553008
+	valid_h0_row_norms_min: 1.5196782318
+	valid_h1_col_norms_max: 4.91476258141
+	valid_h1_col_norms_mean: 2.11369713647
+	valid_h1_col_norms_min: 0.813555677818
+	valid_h1_max_x_max_u: 15.8271632992
+	valid_h1_max_x_mean_u: 1.04797055758
+	valid_h1_max_x_min_u: 0.0
+	valid_h1_mean_x_max_u: 2.67292412267
+	valid_h1_mean_x_mean_u: 0.134808155363
+	valid_h1_mean_x_min_u: 0.0
+	valid_h1_min_x_max_u: 0.0136040523515
+	valid_h1_min_x_mean_u: 0.000139210334399
+	valid_h1_min_x_min_u: 0.0
+	valid_h1_range_x_max_u: 15.8271632992
+	valid_h1_range_x_mean_u: 1.04783134724
+	valid_h1_range_x_min_u: 0.0
+	valid_h1_row_norms_max: 4.43306583257
+	valid_h1_row_norms_mean: 2.09838401214
+	valid_h1_row_norms_min: 0.880397503604
+	valid_objective: 1.12789726815
+	valid_y_col_norms_max: 2.17599888814
+	valid_y_col_norms_mean: 1.82253215869
+	valid_y_col_norms_min: 1.49568320305
+	valid_y_max_max_class: 0.872513823162
+	valid_y_mean_max_class: 0.617442924567
+	valid_y_min_max_class: 0.218353147595
+	valid_y_misclass: 0.298843360531
+	valid_y_nll: 0.84129329793
+	valid_y_row_norms_max: 1.28391685083
+	valid_y_row_norms_mean: 0.349608970243
+	valid_y_row_norms_min: 0.0
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.103319 seconds
+Saving to mlp.pkl...
+Saving to mlp.pkl done. Time elapsed: 0.078978 seconds
