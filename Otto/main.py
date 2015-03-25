@@ -6,16 +6,17 @@ Created on Wed Mar 18 17:03:24 2015
 """
 
 import pandas
-import os
+import os, time
 import numpy
 
 from sklearn.cross_validation import StratifiedKFold
 from sklearn.grid_search import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import log_loss
 from sklearn.feature_extraction.text import TfidfTransformer
 
-os.chdir('/home/patanjali/Kaggle/Otto/')
+os.chdir('/home/patanjali/K/Otto/')
 
 train = pandas.read_csv('train.csv')
 test = pandas.read_csv('test.csv')
@@ -31,13 +32,12 @@ idvs.remove('id')
 dv = 'dv'
 
 dev = numpy.random.rand(train.shape[0])<0.8
-dev2 = numpy.random.rand(train.shape[0])<0.2
 val = ~dev
 
 #%%
 
 tfidf_transformer = TfidfTransformer()
-tfidf_transformer.fit(train[dev2][idvs])
+tfidf_transformer.fit(train[dev][idvs])
 
 tfidfs = tfidf_transformer.transform(train[idvs])
 tfidfs = tfidfs.todense()
@@ -49,7 +49,18 @@ for i, idv in enumerate(idvs):
     train[idv+'_idf'] = tfidfs[:,i]
     idfs.append(idv+'_idf')
 
+#%% Log transform
+
+log_idvs = []
+
+for i, idv in enumerate(idvs):
+    print i
+    train[idv+'_log'] = numpy.log(1+train[idv])
+    log_idvs.append(idv+'_log')
+
 #%%
+
+
 interactions = []
 
 dd = train[dev]
@@ -112,31 +123,41 @@ print log_loss(train[val][dv],preds[val,:])
 
 test_predictions = pandas.DataFrame(model.predict_proba(test[idvs]))
 
-#%%
+#%% Building one off models
 
+start_time = time.time()
 feats = idvs
-clf = GradientBoostingClassifier(max_depth=7, warm_start=True, min_samples_split = 400,
-                                 subsample=0.8, min_samples_leaf = 200, learning_rate = 0.1,
+clf = GradientBoostingClassifier(max_depth=20, warm_start=True, min_samples_split = 400,
+                                 subsample=1, min_samples_leaf = 200, learning_rate = 0.1,
                                  verbose=0)
-for i in xrange(1,50):
-    ret = clf.set_params(n_estimators = 10*i)
+                                 
+for i in xrange(1,1000):
+    ret = clf.set_params(n_estimators = 1*i)
     ret = clf.fit(train[feats][dev],train[dv][dev])
     preds = clf.predict_proba(train[feats])
-    print i, log_loss(train[dv][dev],preds[dev,:]), log_loss(train[dv][val],preds[val,:])
+    print i, log_loss(train[dv][dev],preds[dev,:]), log_loss(train[dv][val],preds[val,:]), time.time() - start_time
     
-#%%
+#%% Finding the best iteration
 
 for stage, preds in enumerate(clf.staged_predict_proba(train[feats])):
     print stage, log_loss(train[dv][dev],preds[dev,:]), log_loss(train[dv][val],preds[val,:])
 
-#%%
+#%% Writing test predictions to subnmission file
 
 for stage, preds in enumerate(clf.staged_predict_proba(test[feats])):
     print stage
-    if stage == 270:
+    if stage == 144:
         test_predictions = pandas.DataFrame(preds)#pandas.DataFrame(clf.predict_proba(test[idvs]))
         test_predictions.columns = ['Class_'+str(i) for i in range(1,10)]
         test_predictions['id'] = test['id']
         break
 
-test_predictions.to_csv('GB_270trees_depth8_lr0.1_subsample0.8_minsampleleaf200_min_sample_split_400_nodev.csv',index=False)
+test_predictions.to_csv('GB_144trees_depth20_lr0.1_subsample1_minsampleleaf200_min_sample_split_400_nodev.csv',index=False)
+
+#%%
+
+params = clf.get_params()
+for key in sorted(params.keys()):
+    print key, params[key]
+
+#%%
