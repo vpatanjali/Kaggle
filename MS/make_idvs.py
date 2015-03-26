@@ -29,7 +29,7 @@ if __name__ == '__main__':
     
     dvs = pandas.read_csv("../trainLabels.csv")
     
-    train_libsvm = open('train.libsvm','w')
+    train_libsvm = open('train_bytes.libsvm','w')
     
     """
     
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     
     byte_vectorizer.fit(train_set)
     
-    idvs = Parallel(n_jobs=1)(delayed(process_bytes)(bytefile, dvs, byte_vectorizer, counter) for counter, bytefile in enumerate(byte_files))
+    idvs = Parallel(n_jobs=4)(delayed(process_bytes)(bytefile, dvs, byte_vectorizer, counter) for counter, bytefile in enumerate(byte_files))
     
     for line in idvs:
         train_libsvm.write(line)
