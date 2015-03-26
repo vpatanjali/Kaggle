@@ -35,12 +35,14 @@ files = [x.strip().split(' ')[-1] for x in files]
 asmfiles = [x for x in files if x.endswith('.asm')]
 bytefiles = [x for x in files if x.endswith('.bytes')]
 
+#%%
+
 def extract_and_compress(filenames, extractednames, archivename):
     logger.debug("Processing ", len(filenames), " files")
     lf = open('listfile','w')
-    for filename in filenames:
-        lf.write(filename+'\n')
-    lf.close()
+for filename in bytefiles:
+    lf.write(filename+'\n')
+lf.close()
     subprocess.call(['7z', '-i@listfile', 'e', archivename])
     logger.debug(len(filenames), " files extracted")
     for filename, extractedname in zip(filenames, extractednames):
