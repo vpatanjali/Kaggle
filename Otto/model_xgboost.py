@@ -39,7 +39,7 @@ val_data = xgboost.DMatrix(idvs_data[val], label=dvs[val])
 
 param = {'max_depth':10, 'gamma':1, 'silent':1, 'objective':'multi:softprob', 'num_class':9, 'eval_metric':'mlogloss' }
 
-param['nthread'] = 4
+param['nthread'] = 3
 
 evallist  = [(val_data,'val'), (dev_data,'dev')]
 
